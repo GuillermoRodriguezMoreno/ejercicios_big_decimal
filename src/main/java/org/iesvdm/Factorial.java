@@ -32,7 +32,15 @@ public class Factorial {
 
     public BigInteger calcula() {
         //TODO
-        return null;
+        this.factorial = BigInteger.ONE;
+
+        for (long i = 2; i <= n; i++) {
+
+            this.factorial =  this.factorial.multiply(BigInteger.valueOf(i));
+
+        }
+
+        return this.factorial;
     }
 
 }
